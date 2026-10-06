@@ -1,0 +1,19 @@
+{
+  "name": "holt-winters-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "additive Holt-Winters backend (API + CLI)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/core.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/demo.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
+
